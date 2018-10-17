@@ -1,0 +1,31 @@
+input[type='checkbox']:after{
+    line-height: 1.5em;
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: -4px;
+    margin-left: -4px;
+    border: 1px solid #00ff00;
+    border-radius: 0.25em;
+    background: white;
+    }
+
+    input[type='checkbox']:checked:after {
+    background: blue;
+    width: 15px;
+    height: 15px;
+    border: 3px solid blue;
+    }
+    input[type='checkbox']:disabled:after {
+        background: red;
+        width: 15px;
+        height: 15px;
+        border: 3px solid red;
+        }
+    input[type='checkbox']:checked:disabled:after {
+        background: yellow;
+        width: 15px;
+        height: 15px;
+        border: 3px solid yellow;
+        }
